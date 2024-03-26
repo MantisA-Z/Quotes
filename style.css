@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:wght@100&display=swap');
+
+body{
+    font-family: "Lato", sans-serif;
+    font-size: 1.8rem;
+
+    background: #bbc6fa;
+    text-align: center;
+}
+
+#container{
+    background: #fff;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px rgba(0,0,0,0.15);
+}
+
+#msg{
+    position: relative;
+}
+
+#msg::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#controls{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#controls button{
+    background: rgb(23, 124, 229);
+    color: #fff;
+    border-radius: 25px;
+    border: lpx solid rgb(23, 124, 229);
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#controls button:hover{
+    background: rgb(0, 123, 255);
+}
+
+
+#authorName{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+#authorName::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: rgb(3, 47, 94);
+    position: absolute;
+    top: 50%;
+    left : -30px;
+}
